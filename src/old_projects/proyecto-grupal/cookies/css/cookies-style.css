@@ -1,0 +1,10 @@
+@charset "utf-8";
+
+.cookies{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.table, table td{
+    padding: 1%;
+}

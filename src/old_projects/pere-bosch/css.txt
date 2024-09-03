@@ -1,0 +1,359 @@
+@charset "utf-8";
+
+*, *::after, *::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --bg-color-primary:#0000ff;
+    --bg-color-secundary: #a57a2a;
+    --bg-primary: rgb(51,51,51);
+    --bg-modal:rgb(187,177,241);
+    --bg-container-modal: rgba(51, 51, 51, 0.8);
+    --text-color-primary:#333;
+    --text-color-secondary: #fff;
+}
+
+body{
+    min-height: 100vh;
+    width: 100%;
+    box-sizing: inherit;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
+.mostrar{
+    animation: fadeIn 9s;
+}
+
+@keyframes fadeIn{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+header{
+    flex: 0 0 20vh;
+    background-image: url(../altres-fotos/FotoSlider.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+header h1{
+    text-align: center;
+    color: #fff;
+    font-size: 3rem;
+    margin-top: 3rem;
+}
+
+nav{
+    flex: 0 0 5vh;
+    background-color: #5c5b5b;
+    font-size: 1.2rem;
+}
+
+nav a{
+    color: #fff;
+    text-decoration: none;
+}
+
+nav ul{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    justify-content: flex-end;
+    align-items: center;
+    height: 5vh;
+}
+
+nav ul li{
+    padding: 0rem 1rem;
+}
+
+main{
+    flex: 1 0 auto;
+}
+
+.exposicions{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+    justify-content: space-around;
+    /* flex-wrap: wrap; */
+    gap:1rem;
+    padding: 1rem;
+}
+
+#exposicio section h2{
+    text-align: center;
+    font-size: 2.5rem;
+    padding-top: 1rem;
+
+}
+
+#botones{
+    padding-top: 4rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#botones button{
+    margin: 0rem 2rem;
+}
+
+button{
+    width: 150px;
+    height: 50px;
+    font-size: 1.2rem;
+}
+
+.exposicions figure{
+    margin: auto;
+}
+
+.exposicions figure img{
+    width: 300px;
+    height: 400px;
+}
+
+.container{
+    width: 50%;
+    margin: auto;
+    padding: 0.5rem 0rem;
+}
+
+#acordio{
+    position: relative;
+    cursor: pointer;
+}
+
+#acordio::before{
+    content: '+';
+    position: absolute;
+    right: 10px;
+}
+
+.contenido{
+    border: 1px solid #333;
+    text-align: justify;
+    height: 0;
+    overflow: hidden;
+    transition: 0.5s;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 1.2rem;
+}
+
+.contenido div p{
+    padding: 1rem 1rem;
+}
+
+.pere{
+    width: 600px;
+    height: 450px;
+    margin: auto;
+}
+
+dd{
+    padding: 0.5rem;
+}
+
+.activa .contenido{
+    padding: 1rem;
+    height: 600px;
+}
+
+.activa h2::before{
+    content: '-';
+}
+
+#contacto{
+    padding: 2rem 0rem;
+}
+
+#contacto h3{
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 2rem 0rem;
+}
+
+form{
+    width: 800px;
+    margin: auto;
+    background-color: #8f8f8f;
+    color: #fff;
+    border-radius: 5px;
+}
+
+form fieldset{
+    border: none;
+    padding: 1rem;
+}
+
+form ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
+form ul li{
+    display: flex;
+    flex-direction: column;
+    padding: 0.5rem 0rem;
+}
+
+form ul li label{
+    padding: 0.5rem 0rem;
+}
+
+form ul li input{
+    width: 100%;
+    height: 30px;
+}
+
+#botonEnvia{
+    width: 100px;
+    height: 40px;
+    margin: auto;
+}
+
+form ul li textarea{
+    width: 100%;
+    height: 200px;
+}
+
+form fieldset:nth-child(2) ul li:first-child{
+    display: flex;
+    flex-direction: row;
+}
+
+.noError{
+    visibility: hidden;
+}
+
+.error{
+    visibility: visible;
+    color:#333;
+    font-weight: 700;
+}
+
+.borderror{
+    border: 2px solid #ff0000;
+}
+
+.noborderror{
+    border: 1px solid #000;
+}
+
+/* Estilos para el modal */
+.modal{
+    position: fixed;
+    z-index: 1;
+    overflow: auto;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--bg-container-modal);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-container{
+    position: relative;
+    width: 30vw;
+    margin: auto;
+    background-color: var(--bg-modal);
+    padding: 1rem;
+    animation-name:modal;
+    animation-duration: 3s;
+}
+
+.modal-container :where(header, footer){
+    background-color: var(--bg-primary);
+    color: var(--text-color);
+    padding: 0.5rem;
+}
+
+.modal-container header{
+    display: flex;
+    justify-content: space-between;
+}
+
+.modal-container header i{
+    font-size: 1.5rem;
+    transition: transform ease 0.3s;
+}
+
+.modal-container header i:hover{
+    cursor: pointer;
+    transform: scale(1.2);
+}
+
+.modal-container main{
+    padding: 0.8rem 1rem;
+    text-align: justify;
+}
+
+.oculta-modal{
+    display: none;
+}
+
+/* Animación */
+@keyframes modal{
+    from{
+        top:-500px;
+        opacity: 0;
+    }
+    to{
+        top:0;
+        opacity: 1;
+    }
+}
+
+footer{
+    flex:0 0 auto;
+    background-color: #5c5b5b;
+    color: #fff;
+}
+
+footer img{
+    width: 100px;
+}
+
+#altres-elements{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* justify-content: space-between; */
+}
+
+#xarxes-socials{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.clima{
+    display: grid;
+    grid-template-columns: repeat(3,20%);
+    align-items: center;
+    justify-content: end;
+}
+
+.dia{
+    text-align: end;
+}

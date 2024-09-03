@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso de Confección y Publicación de Páginas Web</title>
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/f0d7e7403f.js" crossorigin="anonymous"></script>
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="logos/codingbrowser_102152.ico" type="image/x-icon">
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya&family=Ubuntu&display=swap" rel="stylesheet">
+
+    <!-- Estilos Bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <!-- Mis estilos -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="contenedor">
+    <header class="contenido">
+            <!-- Menú de navegación -->
+            <nav class="navbar navbar-expand-lg bg-dark z-3 position-absolute w-100 position-fixed p-3" data-bs-theme="dark">
+                <a class="navbar-brand" href="#"><img src="logos/logo.png" id="logo" alt="logo-principal" class="animacion"></a>
+                <button class="navbar-toggler text-bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#fechas">Fechas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#modulos">Módulos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#salidas-profesionales">Salidas Profesionales</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#secction-form">Contacto</a>
+                    </li>
+                    </ul>
+                </div>
+            </nav>
+            <!-- / .menu de navegación -->
+
+            <!-- Carousel / slider -->
+            <div id="carouselExampleCaptions" class="carousel slide carousel-fade d-none d-md-block" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="img/slider-1.jpg" class="d-block w-100" alt="aula">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h1 class="text-bg-light p-3 opacity-75 rounded">Curso de diseño y publicación de páginas web</h1>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/slider-2.jpg" class="d-block w-100" alt="clase">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h2 class="text-bg-light p-3 opacity-75 rounded">Iniciate con nosotros en los programas de desarrollo web.</h2>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/slider-3.jpg" class="d-block w-100" alt="aula-reformada">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h2 class="text-bg-light p-3 opacity-75 rounded">Iniciate con nosotros en los programas de desarrollo web.</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <!-- / .carousel -->
+    </header>
+    <!-- / .header -->
+
+    <main class="contenido pt-5" id="fechas" >
+        <section class="pt-5">
+            <h2 class="text-center py-5 d-sm-block d-md-none">Curso de diseño y confección de páginas web</h2>
+            <h2 class="text-center py-2">Fechas y horarios</h2>
+            <!-- Sección de inicio de curso -->
+            <div class="row w-75 m-auto pt-4">
+                <div class="col-sm-6 mb-3 mb-sm-0">
+                <div class="card">
+                    <div class="card-body text-center m-auto">
+                    <h3 class="card-title">Curso 2023/2024</h3>
+                    <h4 class="card-text">Inicio del semestre:</h4>
+                    <p class="card-text p-3">2 de Noviembre de 2023</p>
+                    <h4 class="card-text">Final del semestre:</h4>
+                    <p class="card-text p-3">11 de Abril de 2024</p>
+                    <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                    </div>
+                </div>
+                </div>
+                <div class="col-sm-6">
+                <div class="card">
+                    <div class="card-body text-center m-auto">
+                    <h3 class="card-title">Horario</h3>
+                    <h4 class="card-text">Turno de mañana:</h4>
+                    <p class="card-text p-3">De 09:00 a 14:00</p>
+                    <h4 class="card-text">Turno de tarde</h4>
+                    <p class="card-text p-3">De 15:30 a 20:30</p>
+                    <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                    </div>
+                </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Herramientas -->
+        <section class="pt-3 m-auto">
+            <h2 class="text-center py-2">Herramientas que aprenderás a usar</h2>
+              <ul class="nav nav-tabs d-flex flex-row flex-wrap justify-content-center w-75 m-auto" id="myTab" role="tablist">
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link active " id="html-tab" data-bs-toggle="tab" data-bs-target="#html" type="button" role="tab" aria-controls="home" aria-selected="true">HTML5</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link" id="css-tab" data-bs-toggle="tab" data-bs-target="#css" type="button" role="tab" aria-controls="profile" aria-selected="false">CSS3</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link" id="javascript-tab" data-bs-toggle="tab" data-bs-target="#javascript" type="button" role="tab" aria-controls="contact" aria-selected="false">JavaScript</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="bootstrap-tab" data-bs-toggle="tab" data-bs-target="#bootstrap" type="button" role="tab" aria-controls="contact" aria-selected="false">Bootstrap</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="php-tab" data-bs-toggle="tab" data-bs-target="#php" type="button" role="tab" aria-controls="contact" aria-selected="false">PHP</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="wordpress-tab" data-bs-toggle="tab" data-bs-target="#wordpress" type="button" role="tab" aria-controls="contact" aria-selected="false">Wordpress</button>
+                </li>
+              </ul>
+              <div class="tab-content w-75 m-auto d-flex flex-row flex-wrap justify-content-center mt-0" id="myTabContent">
+                <div class="tab-pane fade show active" id="html" role="tabpanel" aria-labelledby="home-tab">
+                    <figure class="m-auto d-flex justify-content-center mb-5">
+                        <img src="logos/logo_html5.svg"/>
+                    </figure>
+                    <p><abbr title="HyperText Markup Languague" lang="en">HTML5</abbr> es un lenguaje de marcado que deriva del <abbr title="Standard Generalized Markup Language" lang="en">SGML</abbr> diseñado para estructurar textos y relacionarlos en forma de hipertexto. Gracias a Internet y los navegadores web, se ha convertido en uno de los formatos más populares que existen para la construcción de documentos para la web.</p>
+                </div>
+                <div class="tab-pane fade" id="css" role="tabpanel" aria-labelledby="profile-tab">
+                    <figure class="m-auto d-flex justify-content-center mb-5">
+                        <img src="logos/logo_css3.svg"/>
+                    </figure>
+                    <p><abbr title="Cascading Style Sheets" lang="en">CSS3</abbr> es un lenguaje de hojas de estilo (<span lang="en">CSS</span>, <span lang="en">Cascading Style Sheets</span> o lenguaje de hojas de estilo) utilizado para describir la semántica de presentación (el aspecto y formato) de un documento escrito en un lenguaje de marcas. Su aplicación más común es diseñar páginas web escritas en <abbr title="HyperText Markup Languague" lang="en">HTML</abbr> i <abbr title="Extensible HyperText Markup Language" lang="en">XHTML</abbr>.</p>
+                </div>
+                <div class="tab-pane fade" id="javascript" role="tabpanel" aria-labelledby="profile-tab">
+                    <figure class="m-auto d-flex justify-content-center mb-5">
+                        <img src="logos/logo_javascript.svg">
+                    </figure>
+                    <p><span lang="en">JavaScript</span> es un lenguaje script basado en objetos implementado originariamente por <span lang="en">Netscape Communications Corporation</span>, y que derivó en el estándar <span lang="en"><abbr title="European Computer Manufacturers Association">ECMAS</abbr>cript</span>. Es conocido sobre todo por su uso en páginas web, pero también se utiliza en otras aplicaciones.</p>
+                </div>
+                <div class="tab-pane fade" id="bootstrap" role="tabpanel" aria-labelledby="profile-tab">
+                    <figure class="m-auto d-flex justify-content-center mb-5">
+                        <img src="logos/logo_bootstrap.svg"/>
+                    </figure>
+                    <p><span lang="en">Bootstrap</span> es un <span lang="en">framework</span> de desarrollo web gratuito y de código abierto. Está diseñado para facilitar el proceso de desarrollo de los sitios web <span lang="en">responsive</span> y orientados a los dispositivos móviles, proporcionando una colección de sintaxis para diseños de plantillas.</p>
+                </div>
+                <div class="tab-pane fade" id="php" role="tabpanel" aria-labelledby="profile-tab">
+                    <figure class="m-auto d-flex justify-content-center mb-0">
+                        <img src="logos/logo_php.svg"/>
+                    </figure>
+                    <p><abbr title="Hypertext Preprocessor" lang="en">PHP</abbr> es el lenguaje de programación del lado del servidor más usado en la web. Con <abbr title="Hypertext Preprocessor" lang="en">PHP</abbr> puedes realizar el <span lang="en">backend</span> de aplicaciones web de una manera accesible, sencilla y directa.</p>
+                    <p>Con <abbr title="Hypertext Preprocessor" lang="en">PHP</abbr> puedes desarrollar sitios y aplicaciones de todo tipo. <span lang="en">PHP</span> es el motor además de los <abbr title="content management system" lang="en">CMS</abbr> más populares, como <span lang="en">WordPress</span>, <span lang="en">Joomla</span>, <span lang="en">Drupal</span> o <span lang="en">Magento</span>, entre muchos otros.</p>
+                </div>
+                <div class="tab-pane fade" id="wordpress" role="tabpanel" aria-labelledby="contact-tab">
+                    <figure class="m-auto d-flex justify-content-center mb-5 m-auto">
+                        <img src="logos/logo_wordpress.svg"/>
+                    </figure>
+                    <p><span lang="en">WordPress</span> es un sistema de gestión de contenidos web (<abbr title="content management system" lang="en">CMS</abbr> o <span lang="en">content management system</span>), que en pocas palabras es un sistema para publicar contenido en la web de forma sencilla.</p>
+                </div>
+              </div>
+        </section>
+
+        <!-- Sección de los cursos -->
+        <section class="container pt-5 contenido" id="modulos">
+            <div>
+                <h2 class="text-center">Modulos Formativos</h2>
+                <div class="container d-flex flex-column flex-lg-row justify-content-lg-evenly align-items-center pt-4">
+                    <!-- tarjeta cursos -->
+                    <div class="card w-100 w-md-25 mb-3 me-lg-3">
+                        <img src="img/Modulo-1.jpg" class="card-img-top" alt="modulo1">
+                        <div class="card-body">
+                            <h5 class="card-title"></h5>
+                            <div class="accordion accordion-flush" id="accordionFlushExample">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="flush-headingOne">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    <p>Primer módulo: <abbr title="HyperText Markup Languague" lang="en">HTML5</abbr> y <abbr title="Cascading Style Sheets" lang="en">CSS3</abbr></p>
+                                </button>
+                                </h2>
+                                <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo, animi eos? Dolor culpa cum odio? Fugit placeat delectus eius velit ad nemo eaque, facere quia exercitationem tempore tenetur est perspiciatis!</p>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                    <!-- / .tarjeta cursos -->
+                    <!-- tarjeta cursos -->
+                    <div class="card w-100 w-md-25 mb-3 me-lg-3">
+                        <img src="img/Modulo-2.jpg" class="card-img-top" alt="modulo2">
+                        <div class="card-body">
+                            <h5 class="card-title"></h5>
+                            <div class="accordion accordion-flush" id="accordionFlushExample">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="flush-headingTwo">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseOne">
+                                    <p>Segundo módulo: JavaScript y funcionalidad</p>
+                                </button>
+                                </h2>
+                                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo, animi eos? Dolor culpa cum odio? Fugit placeat delectus eius velit ad nemo eaque, facere quia exercitationem tempore tenetur est perspiciatis!</p>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                    <!-- / .tarjeta cursos -->
+                    <!-- tarjeta cursos -->
+                    <div class="card w-100 w-md-25 mb-3 me-lg-3">
+                        <img src="img/Modulo-3.jpg" class="card-img-top" alt="modulo3">
+                        <div class="card-body">
+                            <h5 class="card-title"></h5>
+                            <div class="accordion accordion-flush" id="accordionFlushExample">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="flush-headingThree">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="true" aria-controls="collapseOne">
+                                    <p>Tercer módulo: PHP y Servidor</p>
+                                </button>
+                                </h2>
+                                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo, animi eos? Dolor culpa cum odio? Fugit placeat delectus eius velit ad nemo eaque, facere quia exercitationem tempore tenetur est perspiciatis!</p>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Profesores -->
+        <section class="pt-2 contenido m-auto w-80" id="docentes">
+            <h2 class="text-center">Docente</h2>
+            <div class="d-flex flex-column flex-lg-row justify-content-evenly pt-4 gap-3">
+                <div class="card mb-3 m-auto" style="max-width: 540px;">
+                    <div class="row g-0">
+                        <div class="col-md-4" id="manu">
+                        <img src="img/ManuProfe.jpg" class="img-fluid rounded-start m-2" alt="Manu">
+                        </div>
+                        <div class="col-md-8">
+                        <div class="card-body">
+                            <h5 class="card-title">Manuel Plaza Salas</h5>
+                            <p class="card-text">Profesor de Desarrollo Web y Seguridad Informática | Desarrollador Web | Consultor Tecnológico (Barcelona, España).</p>
+                            <a href="https://es.linkedin.com/in/manuel-plaza-salas?original_referer=https%3A%2F%2Fwww.google.com%2F" target="_blank" class="btn btn-primary d-flex justify-content-center">Perfil de Linkedin</a>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card mb-3 m-auto" style="max-width: 540px;">
+                    <div class="row g-0">
+                        <div class="col-md-4">
+                        <img src="img/4k12.jpg" class="img-fluid rounded-start m-2" alt="Xavi">
+                        </div>
+                        <div class="col-md-8">
+                        <div class="card-body">
+                            <h5 class="card-title">Xavi</h5>
+                            <p class="card-text">¿Y esto como se ve en 4k?</p>
+                            <a href="https://es.wikipedia.org/wiki/Resoluci%C3%B3n_4K" target="_blank" class="btn btn-primary d-flex justify-content-center">¿Qué es el 4K?</a>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seccion de ejemplo de trabajos -->
+        <section class="container mt-5 mb-5 contenido w-80" id="ejemplos">
+            <h2 class="text-center">Ejemplo de trabajo realizado</h2>
+            <a class="d-flex justify-content-center m-auto" href="../proyecto-mujeres/index.html" target="_blank">
+                <figure id="ejemplo-trabajo">
+                    <img src="img/mujeres.png" class="img-fluid" alt="mujeres-mundo-informatica">
+                </figure>
+            </a>
+        </section>
+
+        <!-- Seccion de salidas profesionales -->
+        <section class="pt-2 contenido m-auto" id="salidas-profesionales">
+            <h2 class="text-center">Salidas Profesionales</h2>
+            <div class="d-flex flex-column flex-lg-row justify-content-between p-4 pt-4 gap-2">            
+                <div class="card justify-content-center m-auto w-75" style="width: 20rem;">
+                    <img src="img/maquetador.jpg" class="card-img-top" alt="maquetador">
+                    <div class="card-body">
+                        <h3 class="fs-4">Maquetador/a Web</h3>
+                        <p class="card-text">Están especializados en traducir el diseño gráfico a <abbr title="HyperText Markup Languague" lang="en">HTML5</abbr> y a lenguaje de estilos <abbr title="Cascading Style Sheets" lang="en">CSS</abbr> con el objetivo de que los navegadores web interpreten todos los elementos y muestran al usuario el diseño propuesto por el diseñador gráfico.</p>
+                    </div>
+                </div>
+                <div class="card justify-content-center m-auto w-75" style="width: 20rem;">
+                    <img src="img/desarrollador.jpg" class="card-img-top" alt="desarrollador">
+                    <div class="card-body">
+                        <h3 class="fs-4">Desarrollador/a web</h3>
+                        <p class="card-text">Son programadores especializados, o dedicados de forma específica, a desarrollar aplicaciones de la <span lang="en">World Wide Web</span> o aplicaciones distribuidas en red que se ejecutan intermediando <abbr title="Hypertext Transfer Protocol" lang="en">HTTP</abbr> desde un servidor web a un navegador web.</p>
+                    </div>
+                </div>
+                <div class="card justify-content-center m-auto w-75" style="width: 20rem;">
+                    <img src="img/diseñador.jpg" class="card-img-top" alt="disenador">
+                    <div class="card-body">
+                        <h3 class="fs-4">Diseñador/a Web</h3>
+                        <p class="card-text">Combinan los cimientos estéticos y artísticos con la tecnología, entendimiento como mera herramienta para comunicar ideas a través del diseño de las páginas impresas y de las pantallas de dispositivos electrónicos de todos los aparatos.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Formulario + Mapa -->
+        <section  class="container contenido" id="secction-form">
+            <h2 class="text-center m-5" id="contacto">Contacta con nosotros</h2>
+            <div class="d-flex flex-column" id="container-form">
+                <!-- Contenedor para el formulario -->
+                <div id="container-form">
+                    <form action="php/proceso.php" method="post" name="formulario1" id="formulario1">
+                        <!-- Campo para el nombre -->
+                        <fieldset id="campo_nombre">
+                            <label for="nombre" class="etiqueta_entrada">Nombre</label>
+                            <div class="entrada_campo">
+                                <input type="text" name="nombre" id="nombre" class="dato_entrada" autocomplete="off">
+                                <i class="estado_validacion fa-solid fa-circle-xmark fa-lg"></i>
+                            </div>
+                            <p class="dato_entrada_error">Introduzca un nombre válido</p>
+                        </fieldset>
+
+                        <!-- Campo para los apellidos -->
+                        <fieldset id="campo_apellidos">
+                            <label for="apellidos" class="etiqueta_entrada">Apellidos</label>
+                            <div class="entrada_campo">
+                                <input type="text" name="apellidos" id="apellidos" class="dato_entrada" autocomplete="off">
+                                <i class="estado_validacion fa-solid fa-circle-xmark fa-lg"></i>
+                            </div>
+                            <p class="dato_entrada_error">Introduzca unos apellidos válidos</p>
+                        </fieldset>
+
+                        <!-- Campo para el correo electronico -->
+                        <fieldset id="campo_correo">
+                            <label for="correo" class="etiqueta_entrada">Correo electrónico</label>
+                            <div class="entrada_campo">
+                                <input type="email" name="correo" id="correo" class="dato_entrada" autocomplete="off">
+                                <i class="estado_validacion fa-solid fa-circle-xmark fa-lg"></i>
+                            </div>
+                            <p class="dato_entrada_error">Introduzca un correo electrónico válido</p>
+                        </fieldset>
+
+                        <!-- Campo para el telefono -->
+                        <fieldset id="campo_telefono">
+                            <label for="telefono" class="etiqueta_entrada">Teléfono</label>
+                            <div class="entrada_campo">
+                                <input type="tel" name="telefono" id="telefono" class="dato_entrada" autocomplete="off">
+                                <i class="estado_validacion fa-solid fa-circle-xmark fa-lg"></i>
+                            </div>
+                            <p class="dato_entrada_error">Introduzca un teléfono válido</p>
+                        </fieldset>
+
+                        <!-- Campo para los Términos y la política de privacidad -->
+                        <fieldset id="campo_terminos">
+                            <label for="terminos" class="etiqueta_entrada">
+                                <input type="checkbox" name="terminos" id="terminos" class="terminos_checkbox">Acepto las condiciones y términos de la <a href="#section-form" id="abrir">Política de Privacidad</a>
+                            </label>
+                        </fieldset>
+
+                        <!-- Contenedor para la ventana modal -->
+                        <div class="modal oculta-modal" id="modal">
+                            <div class="modal-container">
+                                <header>
+                                    <h2>Política de privacidad</h2>
+                                    <i class="fa-solid fa-square-xmark" id="cerrar"></i>
+                                </header>
+                                <div>
+                                <p>De acuerdo con lo que establece la Ley Orgánica 15/1999, de 13 de diciembre, de protección de datos de carácter personal, los datos personales que facilitáis en el
+                                formulario de contacto del web serán objeto de tratamiento y se incluirán en el
+                                fichero informatizado "Fichero de contacto de usuarios", del cual esta empresa es
+                                la responsable, declarado e inscrito al Registro de Protección de Datos de
+                                Cataluña, de la Agencia Catalana de Protección de Datos, en cumplimiento de la
+                                Ley Orgánica 15/1999, de 13 diciembre, de protección de datos de carácter
+                                personal y de la Ley 5/2002, de 19 de abril, de la Agencia Catalana de Protección
+                                de Datos...</p>
+                                <p><a href="politica.html" target="_BLANK">¿Desea saber mas?</a></p>
+                                </div>
+                                <footer>
+                                    <h3 class="text-center">Curso de Confección y Publicación de Páginas Web</h3>
+                                </footer>
+                            </div>
+                        </div>
+
+                        <!-- Mensaje de error -->
+                        <div class="mensaje_error text-center m-auto" id="mensaje_error">
+                            <p><i class="fa-solid fa-triangle-exclamation"></i>&nbsp;<b>Revise los datos introducidos</b></p>
+                        </div>
+
+                        <!-- Boton de enviar y mensaje de exito -->
+                        <div class="campo_btn_enviar m-auto">
+                            <input type="submit" value="Enviar Formulario" class="btn_envio">
+                            <p class="mensaje_exito" id="mensaje_exito">MENSAJE ENVIADO CON ÉXITO</p>
+                        </div>
+                    </form>
+                </div>
+                <div class="w-100 d-flex justify-content-center m-auto">
+                    <iframe id="mapa" class="mb-5 w-100 mt-3" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2992.0337605365103!2d2.130868651297593!3d41.41678580203266!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a4981b5fdca4b1%3A0x35e8d1d280af19bd!2sCIFO%20Barcelona%20-%20La%20Violeta!5e0!3m2!1ses!2ses!4v1674668702033!5m2!1ses!2ses" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+
+
+                <!-- Contenedor para la ventana modal -->
+                <div class="modal oculta-modal" id="modal">
+                    <div class="modal-container" id="modal2">
+                        <header>
+                            <h2>Política de privacidad</h2>
+                            <i class="fa-solid fa-square-xmark" id="cerrar"></i>
+                        </header>
+                        <div>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente id est pariatur cupiditate ipsam velit cum, delectus dicta, esse possimus, recusandae a praesentium autem unde error optio impedit in non.</p>
+                        </div>
+                        <footer>
+                            <h3>Confección y Publicación de Páginas Web</h3>
+                        </footer>
+                    </div>
+                </div>
+            </div>              
+  
+        </section>
+
+        <!-- Alumnos 2022-2023 -->
+        <section class="contenido">
+            <h2 class="text-center p-1">Promoción 2022/2023 (Los 9 Valientes)</h2>
+            <p class="text-center"><small>*Estos avatares representan póbremente a los alumnos. Cualquier parecido con la realidad es pura coincidencia*</small></p>
+            <div class="alumnos">
+                <figure>
+                    <a href="https://creairetalla.com/cristian/" target="_blank"><img src="avatares/representacion-3d-avatar-llamada-zoom.jpg" alt="Cristian"></a>
+                    <figcaption>Cristian</figcaption>
+                </figure>
+                <figure>
+                    <a href="https://creairetalla.com/sara/" target="_blank"><img src="avatares/representacion-3d-avatar-llamada-zoom(1).jpg" alt="Sara"></a>
+                    <figcaption>Sara Arnedo</figcaption>
+                </figure>
+                <figure>
+                    <a href="https://creairetalla.com/ulises/" target="_blank"><img src="avatares/representacion-3d-avatar-llamada-zoom(2).jpg" alt="Ulises"></a>
+                    <figcaption>Ulises</figcaption>
+                </figure>
+                <figure>
+                    <a href="https://creairetalla.com/alex/" target="_blank"><img src="avatares/representacion-3d-avatar-llamada-zoom(3).jpg" alt="Alex"></a>
+                    <figcaption>Alex San José</figcaption>
+                </figure>
+                <figure>
+                    <a href="https://creairetalla.com/alan/" target="_blank"><img src="avatares/representacion-3d-avatar-llamada-zoom(4).jpg" alt="Alan"></a>
+                    <figcaption>Alan</figcaption>
+                </figure>
+                <figure>
+                    <a href="https://creairetalla.com/dani/" target="_blank"><img src="avatares/representacion-3d-avatar-llamada-zoom(5).jpg" alt="Dani"></a>
+                    <figcaption>Dani Sainz-Rozas</figcaption>
+                </figure>
+                <figure>
+                    <a href="https://creairetalla.com/jefferson/" target="_blank"><img src="avatares/representacion-3d-avatar-llamada-zoom(6).jpg" alt="Jefferson"></a>
+                    <figcaption>Jefferson</figcaption>
+                </figure>
+                <figure>
+                    <a href="https://creairetalla.com/gilbert/" target="_blank"><img src="avatares/representacion-3d-avatar-llamada-zoom(7).jpg" alt="Gilbert"></a>
+                    <figcaption>Gilbert Sencion</figcaption>
+                </figure>
+                <figure>
+                    <a href="https://creairetalla.com/luis/" target="_blank"><img src="avatares/representacion-3d-avatar-llamada-zoom(8).jpg" alt="Luis"></a>
+                    <figcaption>Luis</figcaption>
+                </figure>
+            </div>
+            <h3 class="text-center pt-5 p-1">Caídos en combate</h3>
+            <div class="caidos justify-content-evenly m-auto">
+                <figure id="axel">
+                    <img class="d-flex justify-content-center m-auto" src="avatares/pozo2.jpg" alt="Axel">
+                    <figcaption class="pb-4">Axel</figcaption>
+                </figure>
+                <figure id="juan">
+                    <img class="d-flex justify-content-center m-auto" src="avatares/juan-f.jpg" alt="Juan">
+                    <figcaption class="pb-4">Juan</figcaption>
+                </figure>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-dark p-5 mt-5">
+        <p class="text-center text-light">Web desarrollada por Alex San Jose, Dani Sainz-Rozas, Gilbert Sencion, Sara Arnedo para CIFOS La Violeta</p>
+        <p class="text-center text-light">Puedes consultar aquí nuestra <a href="cookies/cookies.html" target="_blank">política de cookies</a></p>
+    </footer>
+
+    <!-- Scripts de Bootstrap -->
+    <script src="js/bootstrap.bundle.js"></script>
+    <!-- Mis Scripts -->
+    <script src="js/myscript.js"></script>
+    <!-- Modal script -->
+    <script src="js/modal-script.js"></script>
+    <!-- Script formulario -->
+    <script src="js/form-script.js"></script>
+</body>
+</html>

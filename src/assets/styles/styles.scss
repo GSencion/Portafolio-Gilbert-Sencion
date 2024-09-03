@@ -1,0 +1,25 @@
+@charset "utf-8";
+
+*, *::after, *::before{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+// Variables
+:root{
+
+    --color-primary:#5288F2;
+    --color-secondary:#797FF2;
+    --color-tertiary:#AC99F2;
+    --color-complementary-primary:#8C3545;
+    --color-complementary-secondary:#D6C2F2;
+    --color-shadow:#6B6043;
+    --color-warning:#ff0000;
+    --color-send:#00FF48;
+    --font-family-headeing: 'Merriweather', serif;
+    --font-family-text: 'Poppins', sans-serif;
+    --font-size-primary:18px;
+    --font-color-primary:#000000;
+    --font-color-secondary: #ffffff;
+}

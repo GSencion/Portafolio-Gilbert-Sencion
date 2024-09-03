@@ -1,0 +1,31 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" width="600" height="600">
+	<title>logo_html5-svg</title>
+	<style>
+		.s0 { fill: #000000 } 
+		.s1 { fill: #e34e26 } 
+		.s2 { fill: #ef662a } 
+		.s3 { fill: #ffffff } 
+		.s4 { fill: #ebebeb } 
+	</style>
+	<g id="Layer">
+		<g id="Layer">
+			<g id="Layer">
+				<path id="Layer" class="s0" d="m129.7 4h26.7v26.3h24.4v-26.3h26.7v79.8h-26.7v-26.7h-24.4v26.7h-26.7z"/>
+				<path id="Layer" class="s0" d="m242.5 30.5h-23.5v-26.5h73.7v26.5h-23.5v53.3h-26.7z"/>
+				<path id="Layer" class="s0" d="m304.4 4h27.8l17.1 28 17.1-28h27.8v79.8h-26.6v-39.6l-18.3 28.4h-0.5l-18.3-28.4v39.6h-26.1z"/>
+				<path id="Layer" class="s0" d="m407.5 4h26.6v53.4h37.5v26.4h-64.1z"/>
+			</g>
+		</g>
+	</g>
+	<g id="Guides_to_delete">
+		<g id="Layer">
+			<path id="Layer" class="s1" d="m128.3 548l-38.3-429.3h420.3l-38.3 429.3-172 47.7z"/>
+			<path id="Layer" class="s2" d="m299.9 173.7v350.7l120.3-33.3 28.3-317.4z"/>
+			<path id="Layer" class="s3" d="m185.8 219.2l12.2 137.8h157.9l-5.3 59.1-50.8 13.7-50.7-13.7-3.4-38h-45.8l6.6 73.2 93.3 25.9 93.4-25.9 12.5-139.9h-166l-4.2-46.6h174.2 0.2l4.1-45.6z"/>
+			<g id="Layer">
+				<path id="Layer" class="s4" d="m299.9 219.2h-114.1l12.2 137.8h101.9v-45.6h-60.2l-4.2-46.6h64.4z"/>
+				<path id="Layer" class="s4" d="m299.9 429.8h-0.1l-50.7-13.7-3.4-38h-45.8l6.6 73.2 93.3 25.9h0.1z"/>
+			</g>
+		</g>
+	</g>
+</svg>

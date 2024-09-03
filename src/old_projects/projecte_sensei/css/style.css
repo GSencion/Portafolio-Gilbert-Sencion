@@ -1,0 +1,1467 @@
+@charset "utf-8";
+
+*, *::after, *::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --bg-header:#FCD150;
+    --bg-header-secondary:#333333;
+    --bg-primary:#F9EECD;
+    --bg-resolucio:#EFA0B9;
+    --color-primary:#333;
+    --color-secondary:#fff;
+    --color-violet:#3C2273;
+    --color-orange:#F9CD00;
+    --color-pink:#D07796;
+    --footer-color-primary:#f9f9f9;
+    --footer-color-secondary: #c7c7c7;
+    --font-size-primary: 18px;
+}
+
+body{
+    min-height: 100vh;
+    width: 100%;
+    box-sizing: inherit;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    max-width: 2560px;
+    margin: 0 auto;
+    line-height: 1.5rem;
+    font-size: var(--font-size-primary);
+}
+
+/* ------------------------------------------------------------------------------- Header ------------------------------------------------------------------------------- */
+
+header{
+    flex: 0 0 auto;
+    /* border: 1px solid red; */
+}
+
+header ul, .header1 ul, nav ul{
+    list-style: none;
+}
+
+.header1{
+    display: none;
+    background-color: var(--bg-header-secondary);
+}
+
+.header1 a{
+    color: var(--color-secondary);
+    text-decoration: none;
+}
+
+.header2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem;
+    background-color: var(--bg-header);
+    color: var(--color-violet);
+}
+
+.header2 figure{
+    padding-left: 0.5rem;
+}
+
+.mail{
+    font-size: 1.5rem;
+}
+
+nav{
+    background-color: var(--bg-header);
+    color: var(--color-violet);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.3rem;
+}
+
+nav a{
+    color: var(--color-violet);
+    text-decoration: none;
+}
+
+nav figure{
+    padding: 0.5rem;
+}
+
+#cruz{
+    font-size: calc(var(--font-size-primary)*1.5);
+    padding-right   : 1.5rem;
+}
+
+.menu{
+    display: none;
+}
+
+.mostrar{
+    display: block;
+    padding: 0.5rem;
+}
+
+.submenu{
+    display: none;
+}
+.submenu li{
+    margin: 0.5rem;
+}
+.activo{
+    display: block;
+    background-color: #fff;
+    border-top:3px solid #5124f5;
+    padding: 5px;
+}
+/* ------------------------------------------------------------------------------- Menu de migas de pan ------------------------------------------------------------------------------- */
+#migas, #migas-2{
+    display: inline-flex;
+    font-size: 1.1rem;
+}
+
+#migas li, #migas-2 li{
+    list-style: none;
+    padding: 0rem 1rem;
+}
+
+#migas a, #migas-2 a{
+    color: var(--color-primary);
+    text-decoration: none;
+}
+
+#migas-2 li{
+    list-style: none;
+    padding: 1rem;
+}
+
+
+/* ------------------------------------------------------------------------------- Main ------------------------------------------------------------------------------- */
+main{
+    flex: 1 0 auto;
+    /* width: 80%;
+    margin: auto; */
+    /* border: 1px solid green; */
+}
+h1{
+    text-align: center;
+    padding: 1em;
+}
+main section{
+    margin: 50px auto;
+}
+/* ------------------------------------------------------------------------------- Main de la página index  ------------------------------------------------------------------------------- */
+.resolucio{
+    text-align: center;
+    background-color: var(--bg-resolucio);
+    padding: 10px;
+    font-size: 0.8em;
+    color: var(--color-secondary);
+}
+
+.resolucio a{
+    color: var(--color-secondary);
+    font-weight: bold;
+}
+
+#main-index section:first-of-type{
+    /* padding: 100px 200px; */
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    background-color: var(--bg-primary-pink);
+}
+
+#main-index section:first-of-type p{
+    text-align: left;
+    font-size: 0.8em;
+    padding: 1em;
+}
+
+#main-index button{
+    padding: 15px;
+    border-radius: 30px;
+    background-color: transparent;
+    font-size: 0.8em;
+}
+
+#main-index button:hover{
+    cursor: pointer;
+    background-color: var(--color-violet);
+    color: var(--color-secondary);
+    border-color: var(--color-secondary);
+}
+
+#main-index iframe{
+    width: 300px;
+    height: 200px;
+    border-radius: 10px;
+    position: relative;
+    margin-top: 3rem;
+}
+
+#main-index section:last-of-type a{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+    text-decoration: none;
+    color: var(--color-primary);
+}
+
+#main-index section:last-of-type div{
+    width: 90%;
+    padding: 1em;
+    border: 1px solid var(--color-primary);
+    border-radius: 10px;
+}
+
+#main-index section:last-of-type h2{
+    padding: 20px 0;
+    color: var(--bg-resolucio);
+}
+#main-index section:last-of-type div p{
+    padding: 10px 0;
+}
+
+#main-index section:last-of-type div:hover{
+    background-color: var(--bg-primary);
+    cursor: pointer;
+}
+
+/* ------------------------------------------------------------------------------- Main de la página programa sensei  ------------------------------------------------------------------------------- */
+#main-sensei ul, #main-sensei ol{
+    list-style: none;
+}
+
+#main-sensei h1,#main-sensei p,#main-sensei ul, #main-sensei ol{
+    padding: 1rem;
+}
+
+#main-sensei h2{
+    padding: 3rem;
+}
+
+#main-sensei .container{
+    width: 90%;
+    margin: auto;
+    padding: 2rem 0rem;
+}
+
+/* #main-sensei .per-que > div:nth-child(2) figure{
+    width: 200px;
+} */
+
+.container h2{
+    position: relative;
+    cursor: pointer;
+}
+
+.container h2::before{
+    content: '+';
+    position: absolute;
+    right: 10px;
+}
+
+#main-sensei .contenido{
+    border: 1px solid #333;
+    text-align: justify;
+    height: 0;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+#main-sensei .activa .contenido{
+    padding: 1rem;
+    height: auto;
+}
+
+#main-sensei .container .activa h2::before{
+    content: '-';
+}
+
+#main-sensei blockquote{
+    padding: 1.2rem;
+    background-color: var(--color-pink);
+}
+
+#main-sensei figure, #main-sensei .tarjeta figure{
+    width: 286px;
+    margin: auto;
+}
+
+#main-sensei .tarjeta a{
+    text-decoration: none;
+    color: var(--color-primary);
+}
+
+#main-sensei section:last-child div:hover{
+    background-color: var(--bg-header);
+}
+
+#main-sensei figure img{
+    width: 100%;
+}
+
+#main-sensei .tarjeta figure img{
+    width: 100%;
+    height: 286px;
+}
+
+#main-sensei .objectius ol{
+    list-style:auto;
+    margin: 0rem 1rem;
+}
+
+#main-sensei .tarjeta div{
+    border: 1px solid var(--color-violet);
+    margin: 1rem auto;
+    border-radius: 3px;
+    width: 90%;
+}
+
+#main-sensei .impacte>div:nth-child(2){
+    border-left: 3px solid var(--color-violet);
+    border-right: 3px solid var(--color-violet);
+    margin: 1rem auto;
+}
+
+#main-sensei>section:last-child{
+    background-color: var(--bg-primary);
+}
+
+#main-sensei>section:last-of-type>div{
+    height: 100%
+}
+
+/* ------------------------------------------------------------------------------- Main de la página adreca  ------------------------------------------------------------------------------- */
+#main-adreca h2{
+    margin: 50px 0;
+}
+
+#main-adreca blockquote{
+    background-color: var(--bg-resolucio);
+    padding: 30px;
+    margin: auto;
+}
+
+#main-adreca section:first-of-type, #main-adreca section:last-of-type a{
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    align-items: center;
+    margin: 50px auto;
+}
+
+#main-adreca section:first-of-type figure{
+    width: 360px; 
+}
+
+#main-adreca section:first-of-type img{
+    width: 100%;
+}
+
+#main-adreca a{
+    text-decoration: none;
+    color: var(--color-primary);
+}
+
+#main-adreca section:last-of-type div{
+    width: 90%;
+    padding: 1em;
+    border: 1px solid var(--color-primary);
+    border-radius: 10px;
+    text-align: center;
+}
+
+#main-adreca section:last-of-type figure, #main-adreca section:last-of-type img{
+    width: 60px;
+    margin: auto;
+}
+
+#main-adreca section:last-of-type div>div{
+    width: 90%;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+#main-adreca section:last-of-type div:hover{
+    cursor: pointer;
+    background-color: var(--bg-primary);
+}
+
+/* ------------------------------------------------------------------------------- Main de la página articula  ------------------------------------------------------------------------------- */
+
+#main-articula h2{
+    margin: 50px 0;
+}
+
+#main-articula section{
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    align-items: center;
+    margin: 50px auto;
+}
+
+#main-articula section:first-of-type figure{
+    width: 360px; 
+}
+
+#main-articula section:last-of-type figure{
+    margin: 50px auto;
+}
+
+#main-articula section:first-of-type img{
+    width: 100%;
+}
+
+/* ------------------------------------------------------------------------------- Main de la página Què és un programa d’iniciació a la docència de qualitat?  ------------------------------------------------------------------------------- */
+/* #main-que-es{
+    background-color: var(--bg-primary);
+} */
+
+#main-que-es h2,#main-que-es p,#main-que-es ul, #main-que-es ol{
+    padding: 1rem;
+}
+
+#main-que-es h1{
+    padding: 3rem;
+    line-height: 2.2rem;
+}
+
+#main-que-es ul, #main-que-es ol{
+    padding: 1.5rem;
+}
+
+#main-que-es ul{
+    list-style:disc;
+}
+
+#main-que-es figure{
+    width: 300px;
+    margin: auto;
+}
+
+#main-que-es figure img{
+    width: 100%;
+}
+
+/* ------------------------------------------------------------------------------- Main de la página Marc de competències professionals docents  ------------------------------------------------------------------------------- */
+#main-marc h2,#main-marc p,#main-marc ul, #main-marc ol{
+    padding: 1rem;
+}
+
+#main-marc figure{
+    width: 150px;
+}
+
+#main-marc figure img{
+    width: 100%;
+}
+
+#main-marc section:nth-child(3){
+    position: relative;
+    top: 20rem;
+    margin: auto;
+    margin-bottom: 24rem;
+    margin-top: 12rem;
+    z-index: -1;
+}
+
+#main-marc blockquote{
+    padding: 3rem;
+    margin: auto;
+    font-size: calc(var(--font-size-primary)* 2);
+    line-height: 2.2rem;
+    background-color: var(--color-orange);
+}
+
+#main-marc blockquote figcaption{
+    padding-top: 3rem;
+    font-size: 1rem;
+    text-align: center;
+}
+
+#main-marc .animacio{
+    position: absolute;
+}
+
+#main-marc .blau{
+    animation-duration: 2s;
+    animation-name: slidein-blau;
+    position: relative;
+    bottom: -2rem;
+    left: 4rem;
+    z-index: 3;
+    opacity: 0.75;    
+}
+
+#main-marc .rosa{
+    animation-duration: 2s;
+    animation-name: slidein-rosa;
+    position: relative;
+    bottom: 18rem;
+    left: 5rem;
+    z-index: 2;
+    opacity: 0.75;
+}
+
+#main-marc .groc{
+    animation-duration: 2s;
+    animation-name: slidein-groc;
+    position: relative;
+    bottom: 35rem;
+    left: 6rem;
+    z-index: 1;
+    opacity: 0.75;
+}
+
+@keyframes slidein-blau{
+    from{
+        margin-top: 10%;
+        opacity: 0;
+    }
+    
+    to{
+        margin-top: 0%;
+        opacity: 0.75;
+    }
+}
+
+@keyframes slidein-rosa{
+    from{
+        margin-bottom: 10%;
+        opacity: 0;
+    }
+    
+    to{
+        margin-bottom: 0%;
+        opacity: 0.75;
+    }
+}
+
+@keyframes slidein-groc{
+    from{
+        margin-left: 10%;
+        opacity: 0;
+    }
+    
+    to{
+        margin-left: 0%;
+        opacity: 0.75;
+    }
+}
+
+/* ------------------------------------------------------------------------------- Main de la página desenvolupament  ------------------------------------------------------------------------------- */
+
+#main-desenvolupament h2{
+    padding-bottom: 20px;
+}
+
+#main-desenvolupament figure, #main-desenvolupament img{
+    width: 350px;
+    margin: auto;
+}
+
+#main-desenvolupament section:first-of-type div{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+#main-desenvolupament section:first-of-type div div{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    align-self: center;
+}
+
+#main-desenvolupament section:first-of-type div div p{
+    margin-bottom: 20px;
+}
+
+#main-desenvolupament section p{
+    line-height: 1.5em;
+    text-align: start;
+}
+
+#main-desenvolupament h3{
+    padding-bottom: 20px;
+}
+
+#main-desenvolupament section:last-of-type div{
+    margin: auto;
+}
+
+#main-desenvolupament section:last-of-type div div{
+    width: 90%;
+    /* border: 2px solid var(--color-primary); */
+    border-radius: 10px;
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 30px;
+}
+
+#main-desenvolupament iframe {
+    width: 300px;
+    height: 200px;
+    margin: auto;
+}
+
+/* ------------------------------------------------------------------------------- Main de la página docents novells  ------------------------------------------------------------------------------- */
+
+#main-novells h1, #main-novells p, #main-novells ul, #main-novells ol{
+    padding: 1rem;
+}
+
+#main-novells h2, #main-novells h3{
+    padding: 2rem;
+}
+
+#main-novells ol, #main-novells ul{
+    margin: 0rem 1rem;
+}
+
+#main-novells ol li{
+    padding: 1rem;
+}
+
+#main-novells figure{
+    width: 285px;
+    margin:auto;
+}
+
+#main-novells #condicions figure img{
+    height: auto;
+}
+
+#main-novells figure img{
+    width: 100%;
+    height: 340px;
+}
+
+#main-novells .container{
+    width: 90%;
+    margin: auto;
+    padding: 2rem 0rem;
+}
+
+.container h2{
+    position: relative;
+    cursor: pointer;
+}
+
+.container h2::before{
+    content: '+';
+    position: absolute;
+    right: 10px;
+}
+
+#main-novells .contenido{
+    border: 1px solid #333;
+    text-align: justify;
+    height: 0;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+#main-novells .activa .contenido{
+    padding: 1rem;
+    height: auto;
+}
+
+#main-novells .container .activa h2::before{
+    content: '-';
+}
+/* ------------------------------------------------------------------------------- Main de la página docents mentors  ------------------------------------------------------------------------------- */
+#main-mentors h1, #main-mentors p, #main-mentors ul, #main-mentors ol{
+    padding: 1rem;
+}
+
+#main-mentors h2, #main-mentors h3{
+    padding: 2rem;
+}
+
+#main-mentors figure{
+    width: 285px;
+    margin: auto;
+}
+
+#main-mentors figure img{
+    width: 100%;
+}
+
+#main-mentors ol, #main-mentors ul{
+    margin: 0rem 1rem;
+}
+
+#main-mentors ol li{
+    padding: 0.5rem;
+}
+
+/* ------------------------------------------------------------------------------- Main de la página transferència  ------------------------------------------------------------------------------- */
+
+#main-transferencia h2{
+    padding-bottom: 30px;
+}
+
+#main-transferencia p{
+    line-height: 1.5em;
+}
+
+#main-transferencia figure, #main-transferencia img{
+    width: 350px;
+    margin: auto;
+}
+
+#main-transferencia section{
+    justify-content: center;
+}
+
+#main-transferencia div{
+    margin-bottom: 30px;
+}
+
+#main-transferencia section:first-of-type, #main-transferencia section:last-of-type{
+    display: flex;
+    flex-direction: column;
+}
+
+#main-transferencia section:nth-child(8) div:first-of-type, #main-transferencia section:last-of-type div:first-of-type, #main-transferencia section:last-of-type div:nth-child(3){
+    background-color: var(--bg-resolucio);
+}
+
+#main-transferencia section:nth-child(8) div:last-of-type, #main-transferencia section:last-of-type div:nth-child(2), #main-transferencia section:last-of-type div:last-of-type{
+    background-color: transparent;
+}
+
+/* ------------------------------------------------------------------------------- Main de la página blog  ------------------------------------------------------------------------------- */
+
+#main-blog h2{
+    padding-bottom: 30px;
+}
+
+#main-blog section{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+
+#main-blog section:first-of-type figure, #main-blog section:first-of-type img{
+    width: 350px;
+    margin: auto;
+}
+
+#main-blog section:last-of-type figure, #main-blog section:last-of-type img{
+    width: 120px;
+    margin: auto;
+}
+
+#main-blog section div{
+    margin: 20px;
+}
+
+/* ------------------------------------------------------------------------------- Página de preguntes frequents ------------------------------------------------------------------------------- */
+#main-preguntes{
+    padding: 1rem;
+}
+
+#main-preguntes section>div{
+    display: flex;
+    flex-direction: column;
+}
+
+#main-preguntes #busca{
+    width: 300px;
+    margin: auto;
+}
+
+/* ------------------------------------------------------------------------------- Página de novetats ------------------------------------------------------------------------------- */
+
+#main-novetats h1, #main-novetats p{
+    padding: 1rem;
+}
+
+#main-novetats figure{
+    width: 300px;
+    margin: auto;
+    padding: 1rem;
+}
+
+#main-novetats figure img{
+    width: 100%;
+}
+
+/* ------------------------------------------------------------------------------- Footer ------------------------------------------------------------------------------- */
+
+footer{
+    flex: 0 0 auto;
+}
+
+footer figure{
+    margin: auto;
+}
+
+footer > div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+footer > div > div:nth-child(1){
+    display: flex;
+    flex-direction: column;
+}
+
+footer p{
+    text-align: center;
+}
+
+/* ------------------------------------------------------------------------------- Media queries ------------------------------------------------------------------------------- */
+@media only screen and (min-width: 375px){
+/* ------------------------------------------------------------------------------- Main de la página index  ------------------------------------------------------------------------------- */
+    #main-index iframe{
+        width: 350px;
+    }
+/* ------------------------------------------------------------------------------- Main de la página programa sensei  ------------------------------------------------------------------------------- */
+    #main-sensei figure{
+        width: 285px;
+    }
+/* ------------------------------------------------------------------------------- Main de la página adreca  ------------------------------------------------------------------------------- */
+    #main-adreca section:first-of-type figure{
+        width: 285px;
+    }
+    #main-articula section figure, #main-articula section img{
+        width: 285px;
+    }
+/* ------------------------------------------------------------------------------- Main de la página Marc de competències professionals docents  ------------------------------------------------------------------------------- */
+    #main-marc .blau{
+        left: 6rem;
+    }
+    #main-marc .rosa{
+        left: 7rem;
+    }
+    #main-marc .groc{
+        left: 8rem;
+    }
+/* ------------------------------------------------------------------------------- Página de novetats ------------------------------------------------------------------------------- */
+    #main-novetats figure{
+        width: 350px;
+    }
+}
+
+@media only screen and (min-width: 425px){
+/* ------------------------------------------------------------------------------- Main de la página index  ------------------------------------------------------------------------------- */
+    #main-index iframe{
+        width: 400px;
+        height: 220px;
+    }
+/* ------------------------------------------------------------------------------- Main de la página programa sensei  ------------------------------------------------------------------------------- */
+    #main-sensei figure, #main-sensei .tarjeta figure{
+        width: 360px;
+    }
+    #main-sensei .tarjeta div{
+        width: 85.1%;
+    }
+/* ------------------------------------------------------------------------------- Main de la página Què és un programa d’iniciació a la docència de qualitat?  ------------------------------------------------------------------------------- */
+    #main-que-es figure{
+        width: 400px;
+    }
+/* ------------------------------------------------------------------------------- Main de la página Marc de competències professionals docents  ------------------------------------------------------------------------------- */
+    #main-marc .blau{
+        left: 8rem;
+    }
+    #main-marc .rosa{
+        left: 9rem;
+    }
+    #main-marc .groc{
+        left: 10rem;
+    }   
+/* ------------------------------------------------------------------------------- Main de la página docents novells  ------------------------------------------------------------------------------- */
+    #main-novells figure{
+        width: 360px;
+    }
+/* ------------------------------------------------------------------------------- Main de la página docents mentors  ------------------------------------------------------------------------------- */
+    #main-mentors figure{
+        width: 360px;
+    }
+/* ------------------------------------------------------------------------------- Página de novetats ------------------------------------------------------------------------------- */
+    #main-novetats figure{
+        width: 400px;
+    }
+}
+
+@media only screen and (min-width: 768px){
+/* ------------------------------------------------------------------------------- Main de la página programa sensei  ------------------------------------------------------------------------------- */
+    .per-que > div:nth-child(odd){
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .per-que > div:nth-child(even){
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    #main-sensei .tarjeta figure{
+        width: 350px;
+        padding: 1rem;
+    }
+    #main-sensei .tarjeta figure{
+        width: 325px;
+    }
+    .tarjeta{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+/* ------------------------------------------------------------------------------- Main de la página index  ------------------------------------------------------------------------------- */
+    #main-index iframe{
+        width: 500px;
+        height: 280px;
+    }
+/* ------------------------------------------------------------------------------- Main de la página Què és un programa d’iniciació a la docència de qualitat?  ------------------------------------------------------------------------------- */
+    #main-que-es figure{
+        width: 500px;
+    }
+/* ------------------------------------------------------------------------------- Main de la página Marc de competències professionals docents  ------------------------------------------------------------------------------- */
+    #main-marc h1{
+        position: relative;
+        top: 11rem;
+        left: 12rem;
+        z-index: -1;
+    }
+    #main-marc .blau{
+        left: 4rem;
+        top: 0rem;
+    }
+    #main-marc .rosa{
+        left: 5rem;
+        bottom: 20rem;
+    }
+    #main-marc .groc{
+        left: 6rem;
+        bottom: 37rem;
+    }
+/* ------------------------------------------------------------------------------- Main de la página desenvolupament  ------------------------------------------------------------------------------- */
+    #main-desenvolupament section:last-of-type div{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    #main-desenvolupament section:last-of-type div div{
+        width: 50%;
+        height: 820px;
+        align-content: start;
+    }   
+
+    #main-desenvolupament iframe{
+        margin-bottom: 30px;
+    }
+/* ------------------------------------------------------------------------------- Main de la página docents novells  ------------------------------------------------------------------------------- */
+    #main-novells #condicions>div:nth-child(2){
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+    #main-novells .metodologic{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 1rem;
+    }
+    #main-novells .metodologic h3, #main-novells .metodologic p{
+        padding: 1rem 1.5rem;
+    }
+    #main-novells .metodologic article:last-child{
+        grid-column-start: span 2;
+        /* text-align: center; */
+    }
+    #main-novells .metodologic article:last-child h3, #main-novells .metodologic article:last-child p{
+        margin: auto;
+        width: 50%;
+    }
+/* ------------------------------------------------------------------------------- Página de novetats ------------------------------------------------------------------------------- */
+    #main-novetats figure{
+        width: 500px;
+    }
+}
+
+@media only screen and (min-width: 1024px){
+    main{
+        width: 80%;
+        margin: auto;
+    }
+
+/* ------------------------------------------------------------------------------- Header ------------------------------------------------------------------------------- */
+    .header1{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+    }
+    .header1 > ul{
+        display: flex;
+    }
+    .header1 > ul > li{
+        padding: 0.5rem 2rem;
+    }
+    .header1 figure{
+        padding: 0.7rem 0.5rem;
+    }
+    #cruz{
+        display: none;
+    }
+    .menu{
+        display: inline-flex;
+        position: absolute;
+        right: 1rem;
+        top: 6rem;
+    }
+    .arrow{
+        padding:0rem 0.4rem;
+        cursor: pointer;
+    }
+    .menu li{
+        padding: 0.5rem;
+        width: 200px;
+    }
+    .submenu li{
+        width: 160px;
+        margin: auto;
+        border-bottom: 1px solid rgba(126, 126, 126, 0.5);
+    }
+/* ------------------------------------------------------------------------------- Main de la página index  ------------------------------------------------------------------------------- */
+    #main-index iframe{
+        width: 600px;
+        height: 340px;
+    }
+/* ------------------------------------------------------------------------------- Main de la página programa sensei  ------------------------------------------------------------------------------- */
+    .impacte{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: auto;
+    }
+/* ------------------------------------------------------------------------------- Main de la página adreca  ------------------------------------------------------------------------------- */
+    #main-adreca section:first-of-type, #main-adreca section:last-of-type, #main-articula section{
+        display: flex;
+        flex-direction: row;
+        gap: 2em;
+        margin: 50px auto;
+    }
+    #main-adreca section:first-of-type figure, #main-adreca section:first-of-type img{
+        width: 425px;
+    }
+/* ------------------------------------------------------------------------------- Main de la página Marc de competències professionals docents  ------------------------------------------------------------------------------- */
+    #main-marc h1{
+        top: 12rem;
+        left: 22rem;
+    }
+/* ------------------------------------------------------------------------------- Main de la página desenvolupament  ------------------------------------------------------------------------------- */
+    #main-desenvolupament section:first-of-type div{
+        flex-direction: row;
+    }
+    #main-desenvolupament section:last-of-type div{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    #main-desenvolupament section:last-of-type div div{
+        width: 30%;
+        height: 820px;
+        align-content: start;
+    }
+    #main-desenvolupament iframe{
+        margin-bottom: 30px;
+    }
+    /* ------------------------------------------------------------------------------- Main de la página docents novells  ------------------------------------------------------------------------------- */
+    #main-novells .metodologic{
+        gap: 2rem;
+    }
+    /* ------------------------------------------------------------------------------- Main de la página docents mentors  ------------------------------------------------------------------------------- */
+    #main-mentors #recursos-mentors>div:nth-child(2)>div:first-child{
+        display: flex;
+        margin-bottom: 1rem;
+    }
+    #main-mentors #recursos-mentors>div:nth-child(2)>div:first-child p:nth-child(1),#main-mentors #recursos-mentors>div:nth-child(2)>div:first-child p:nth-child(2){
+        border-right: 3px solid var(--color-violet);
+    }
+    #main-mentors #recursos-mentors>div:nth-child(2)>div:last-child{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+    #main-mentors figure{
+        width: 420px;
+    }
+/* ------------------------------------------------------------------------------- Main de la página transferència  ------------------------------------------------------------------------------- */
+    #main-transferencia figure, #main-transferencia img{
+        width: 100%;
+        margin: auto;
+        padding-left: 20px;
+        padding-right: 30px;
+    }
+    #main-transferencia section{
+        justify-content: center;
+    }
+    #main-transferencia div{
+        margin-bottom: 30px;
+    }
+    #main-transferencia section:first-of-type, #main-transferencia section:nth-child(8), #main-transferencia section:last-of-type{
+        display: flex;
+        flex-direction: row;
+        gap: 5rem;
+    }
+    #main-transferencia section:first-of-type div{
+        width: 50%;
+    }
+    #main-transferencia section:first-of-type div div{
+        width: 90%;
+        margin: auto;
+    }
+    #main-transferencia section:nth-child(5){
+        width: 50%;
+        margin: auto;
+    }
+    #main-transferencia section:nth-child(6){
+        display: flex;
+    }
+    #main-transferencia section:nth-child(6) div{
+        width: 50%;
+    }
+    #main-transferencia section:nth-child(6) div div{
+        width: 90%;
+        margin: auto;
+    }
+    #main-transferencia section:nth-child(8), #main-transferencia section:last-of-type{
+        flex-direction: column;
+    }
+    #main-transferencia section:nth-child(8) div, #main-transferencia section:last-of-type div{
+        display: flex;
+        height: 220px;
+        align-items: center;
+    }
+    #main-transferencia section:nth-child(8), #main-transferencia section:last-of-type p{
+        padding: 20px;
+    }
+    #main-transferencia section:last-of-type a{
+        width: 500px;
+    }
+/* ------------------------------------------------------------------------------- Main de la página blog  ------------------------------------------------------------------------------- */
+    #main-blog section:first-of-type{
+        flex-direction: row;
+    }
+    #main-blog section:last-of-type div{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    #main-blog section:last-of-type figure, #main-blog section:last-of-type img{
+        width: 77px;
+    }
+    #main-blog section:last-of-type p{
+        width: 1000px;
+    }
+/* ------------------------------------------------------------------------------- Footer ------------------------------------------------------------------------------- */
+    footer > div{
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    footer > div > div:nth-child(1){
+        flex-direction: row;
+    }
+}
+
+@media only screen and (min-width: 1440px){
+/* ------------------------------------------------------------------------------- Header ------------------------------------------------------------------------------- */
+    .menu{
+        top: 7rem;
+    }
+    .header1 figure{
+        padding-left: 3rem;
+    }
+    .header2 figure{
+        padding-left: 5rem;
+    }
+/* ------------------------------------------------------------------------------- Main de la página index  ------------------------------------------------------------------------------- */
+    #main-index iframe{
+        width: 600px;
+        height: 340px;
+    }
+/* ------------------------------------------------------------------------------- Main de la página programa sensei  ------------------------------------------------------------------------------- */
+    .impacte{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: auto;
+        align-items: baseline;
+    }
+    #main-sensei .tarjeta figure{
+        width: 330px;
+        padding: 1rem;
+    }
+    nav, .header1{
+        padding:0rem 2rem;
+    }
+    .header1{
+        padding-top: 0.5rem;
+    }
+/* ------------------------------------------------------------------------------- Main de la página adreca  ------------------------------------------------------------------------------- */
+    #main-adreca h1, #main-articula h1{
+        font-size: 3.5em;
+    }
+    #main-adreca h2, #main-articula h2{
+        font-size: 2.5em;
+    }
+    #main-adreca blockquote, #main-adreca p{
+        font-size: 1.3em;
+    }
+    #main-adreca section p, #main-articula section p{
+        font-size: 1.3em;
+        line-height: 1.5em;
+    }
+    #main-adreca section:first-of-type figure, #main-adreca section:first-of-type img{
+        width: 600px;
+    }
+/* ------------------------------------------------------------------------------- Main de la página articula  ------------------------------------------------------------------------------- */
+    #main-articula section:first-of-type figure, #main-articula section:first-of-type img{
+        width: 700px;
+    }
+    #main-articula section:last-of-type figure, #main-articula section:last-of-type img{
+        width: 1200px;
+        margin: auto;
+    }
+/* ------------------------------------------------------------------------------- Main de la página Què és un programa d’iniciació a la docència de qualitat?  ------------------------------------------------------------------------------- */
+    #main-que-es figure{
+        width: 500px;
+    }
+    #main-que-es section:last-child{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+/* ------------------------------------------------------------------------------- Main de la página Marc de competències professionals docents  ------------------------------------------------------------------------------- */
+    #main-marc h1{
+        top: 12rem;
+        left: 30rem;
+    }
+    #main-marc .blau{
+        left: 10rem;
+
+    }
+    #main-marc .rosa{
+        left: 11rem;
+
+    }
+    #main-marc .groc{
+        left: 12rem;
+
+    }
+/* ------------------------------------------------------------------------------- Main de la página desenvolupament  ------------------------------------------------------------------------------- */
+    #main-desenvolupament h1{
+        font-size: 3em;
+    }
+    #main-desenvolupament h2, #main-desenvolupament h3{
+        font-size: 2em;
+        line-height: 1.7em;
+    }
+    #main-desenvolupament figure, #main-desenvolupament img{
+        width: 300px;
+        margin-right: 30px;
+    }
+    #main-desenvolupament p{
+        font-size: 1.8em;
+    }
+    #main-desenvolupament iframe{
+        width: 900px;
+        height: 500px;
+    }
+    #main-desenvolupament section:last-of-type div div{
+        width: 50%;
+        height: 1700px;
+    }
+}
+
+@media only screen and (min-width: 2560px){
+    body{
+        line-height: 2.5rem;
+    }
+    :root{
+        --bg-header:#FCD150;
+        --bg-header-secondary:#333333;
+        --bg-primary:#F9EECD;
+        --bg-resolucio:#EFA0B9;
+        --color-primary:#333;
+        --color-secondary:#fff;
+        --color-violet:#3C2273;
+        --color-pink:#D07796;
+        --footer-color-primary:#f9f9f9;
+        --footer-color-secondary: #c7c7c7;
+        --font-size-primary: 28px;
+    }
+/* ------------------------------------------------------------------------------- Header  ------------------------------------------------------------------------------- */
+    nav{
+        font-size: 1.7rem;
+    }
+    /* .menu{
+        top: 7rem;
+    } */
+    .menu li{
+        width: 300px;
+    }
+    .header1 figure{
+        padding-left: 14rem;
+    }
+    .header2 figure{
+        padding-left: 15rem;
+    }
+    #main-sensei figure{
+        width: 600px;
+    }
+    #main-sensei .tarjeta figure{
+        width: 500px;
+    }
+    #main-sensei .tarjeta figure img{
+        height: 500px;
+    }
+/* ------------------------------------------------------------------------------- Main de la página index  ------------------------------------------------------------------------------- */
+    #main-index iframe{
+        width: 1000px;
+        height: 550px;
+    }
+/* ------------------------------------------------------------------------------- Main de la página Què és un programa d’iniciació a la docència de qualitat?  ------------------------------------------------------------------------------- */
+    #main-que-es figure{
+        width: 800px;
+    }
+/* ------------------------------------------------------------------------------- Main de la página adreca  ------------------------------------------------------------------------------- */
+    #main-adreca h1, #main-articula h1{
+        font-size: 3.5em;
+    }
+    #main-adreca h2, #main-articula h2{
+        font-size: 2.5em;
+    }
+    #main-adreca blockquote, #main-adreca p{
+        font-size: 1.3em;
+    }
+    #main-adreca section p, #main-articula section p{
+        font-size: 1.3em;
+        line-height: 1.5em;
+    }
+    #main-adreca section:first-of-type figure, #main-adreca section:first-of-type img{
+        width: 600px;
+    }
+/* ------------------------------------------------------------------------------- Main de la página articula  ------------------------------------------------------------------------------- */
+    #main-articula section:first-of-type figure, #main-articula section:first-of-type img{
+        width: 700px;
+    }
+    #main-articula section:last-of-type figure, #main-articula section:last-of-type img{
+        width: 1800px;
+    }
+/* ------------------------------------------------------------------------------- Main de la página desenvolupament  ------------------------------------------------------------------------------- */
+    #main-desenvolupament h1{
+        font-size: 3em;
+    }
+    #main-desenvolupament h2, #main-desenvolupament h3{
+        font-size: 2em;
+        line-height: 1.7em;
+    }
+    #main-desenvolupament figure, #main-desenvolupament img{
+        width: 900px;
+        margin-right: 30px;
+    }
+    #main-desenvolupament p{
+        font-size: 1.8em;
+    }
+    #main-desenvolupament iframe{
+        width: 900px;
+        height: 500px;
+    }
+    #main-desenvolupament section:last-of-type div div{
+        width: 50%;
+        height: 1700px;
+    }
+/* ------------------------------------------------------------------------------- Main de la página Marc de competències professionals docents  ------------------------------------------------------------------------------- */
+    #main-marc h1{
+        top: 15rem;
+        left: 55rem;
+    }
+    #main-marc .blau{
+        left: 25rem;
+    }
+    #main-marc .rosa{
+        left: 26rem;
+        bottom: 27rem;
+    }
+    #main-marc .groc{
+        left: 28rem;
+        bottom: 50rem;
+    }
+    #main-marc figure{
+        width: 200px;
+    }
+    #main-marc section:nth-child(3){
+        position: relative;
+        top: 20rem;
+        margin: auto;
+        margin-bottom: 20rem;
+        margin-top: 16rem;
+    }
+    #main-marc blockquote{
+        text-align: center;
+    }
+    #main-marc blockquote figcaption{
+        font-size: 1.5rem;
+    }
+/* ------------------------------------------------------------------------------- Main de la página Marc de competències professionals docents  ------------------------------------------------------------------------------- */
+    #main-mentors figure{
+        width: 600px;
+    }
+/* ------------------------------------------------------------------------------- Main de la página transferència  ------------------------------------------------------------------------------- */
+    #main-transferencia h1{
+        font-size: 3em;
+    }
+    #main-transferencia h2{
+        font-size: 2.5em;
+    }
+    #main-transferencia p{
+        font-size: 1.8em;
+    }
+    #main-transferencia section:nth-child(8) div{
+        height: 700px;
+    }
+    #main-transferencia section:last-of-type div{
+        height: 400px;
+    }
+    #main-transferencia section:last-of-type a{
+        width: 800px;
+        font-size: 1.7em;
+        line-height: 1.3em;
+    }
+    #main-transferencia figure, #main-transferencia img{
+        width: 800px;
+        margin: auto;
+    }
+/* ------------------------------------------------------------------------------- Main de la página blog  ------------------------------------------------------------------------------- */
+    #main-blog h1{
+        font-size: 3em;
+    }
+    #main-blog h2{
+        font-size: 2.5em;
+    }
+    #main-blog section:first-of-type figure, #main-blog section:first-of-type img{
+        width: 800px;
+    }
+    #main-blog section:last-of-type figure, #main-blog section:last-of-type img{
+        width: 250px;
+    }
+    #main-blog p, #main-blog a{
+        font-size: 1.4em;
+        line-height: 1.3em;
+    }
+    #main-blog section:last-of-type p{
+        width: 1600px;
+    }
+/* ------------------------------------------------------------------------------- Página de novetats ------------------------------------------------------------------------------- */
+    #main-novetats figure{
+        width: 900px;
+    }
+}
