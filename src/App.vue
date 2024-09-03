@@ -185,11 +185,10 @@ footer{
 #linkedin{
   font-size: 1.5rem;
   margin: 0.5rem;
-  color: var(--font-color-primary);
+  color: var(--font-color-secondary);
 }
 
 #linkedin:hover{
-  color: var(--font-color-secondary);
   background-color: var(--font-color-primary);
 }
 
