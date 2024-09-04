@@ -6,7 +6,7 @@
                 <figure>
                         <img src="../assets/img/keiyan-moda.png" alt="Página de Keiyan Moda">
                         <figcaption>
-                            <a href="../old_projects/keiyan-moda/index.html" target="_blank">
+                            <a href="/Portafolio-Gilbert-Sencion/old_projects/keiyan-moda/index.html" target="_blank">
                                 <h2>Keiyan Moda</h2>
                             </a>
                         </figcaption>
@@ -15,7 +15,7 @@
                 <figure>
                         <img src="../assets/img/projecte-sensei.png" alt="Página de Projecte Sensei">
                         <figcaption>
-                            <a href="../old_projects/projecte_sensei/index.html" target="_blank">
+                            <a href="/Portafolio-Gilbert-Sencion/old_projects/projecte_sensei/index.html" target="_blank">
                                 <h2><span lang="ca">Projecte Sensei</span></h2>
                             </a>
                         </figcaption>
@@ -24,7 +24,7 @@
                 <figure>
                         <img src="../assets/img/proyecto-grupal.png" alt="Practica de proyecto grupal">
                         <figcaption>
-                            <a href="../old_projects/proyecto-grupal/index.html" target="_blank">
+                            <a href="/Portafolio-Gilbert-Sencion/old_projects/proyecto-grupal/index.html" target="_blank">
                                 <h2>Proyecto Grupal</h2>
                             </a>
                         </figcaption>
@@ -33,7 +33,7 @@
                 <figure>
                         <img src="../assets/img/pere-bosch.png" alt="Página web de Pere Bosch">
                         <figcaption>
-                            <a href="../old_projects/pere-bosch/index.html" target="_blank">
+                            <a href="/Portafolio-Gilbert-Sencion/old_projects/pere-bosch/index.html" target="_blank">
                                 <h2>Pere Bosch</h2>
                             </a>
                         </figcaption>
